@@ -6,12 +6,9 @@
 }
 
 .form-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px; /* Add padding as needed */
-    background-color: #f8f9fa; /* Light background color */
+    padding-right: 485px;
+    padding-left: 400px;
+    padding-top: 200px;
 }
 
 .image-container {
@@ -21,6 +18,10 @@
 /* Additional styles for the form */
 .signup-padding {
     max-width: 400px; /* Set a maximum width for the form */
+}
+
+.sign-up-image{
+    min-height: 100%;
 }
 
 
