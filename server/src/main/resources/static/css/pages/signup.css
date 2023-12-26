@@ -1,0 +1,26 @@
+/* pages/signup.css */
+
+/* Side-by-side layout */
+.signup-container{
+    min-height: 100%;
+}
+
+.form-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding as needed */
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.image-container {
+    flex: 1;
+}
+
+/* Additional styles for the form */
+.signup-padding {
+    max-width: 400px; /* Set a maximum width for the form */
+}
+
+
