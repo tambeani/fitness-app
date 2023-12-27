@@ -50,6 +50,12 @@ public class UserController {
         }
     }
 
+    @DeleteMapping(value = "/{id}/notifications/{nId}", produces = "text/plain")
+    @ResponseBody
+    public String deleteNotificationByUserId(@PathVariable int id, @PathVariable int nId){
+        userDAO.deleteNotificationById(id, nId);
+        return "Notification Deleted";
+    }
 
 
 }

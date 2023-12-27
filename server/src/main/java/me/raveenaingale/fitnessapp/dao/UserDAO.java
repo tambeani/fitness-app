@@ -93,4 +93,7 @@ public class UserDAO extends DAO {
         return null;
     }
 
+    public void deleteNotificationById(int id, int nId) {
+        System.out.println("Deleting notification "+ nId+ " of user "+id);
+    }
 }

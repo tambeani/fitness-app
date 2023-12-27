@@ -15,7 +15,12 @@ const makeRequest = (url, method, data, onSuccess, onError) => {
 	xhr.onload = function () {
 	  if (xhr.status >= 200 && xhr.status < 300) {
 		// Successful response
-		const responseData = JSON.parse(xhr.responseText);
+        const contentType = xhr.getResponseHeader('content-type');
+        let responseData;
+		if (contentType && contentType.includes('application/json'))
+          responseData = JSON.parse(xhr.responseText);
+         else
+          responseData = xhr.responseText;
 		onSuccess(responseData);
 	  } else {
 		// Error response
