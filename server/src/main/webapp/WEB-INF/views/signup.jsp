@@ -19,7 +19,7 @@
     <div class="p-4">
       <div class="d-flex flex-column form-container">
         <div>
-          <h2>Welcome to fitZen.com</h2>
+          <h2>Welcome to fit<strong style="color:red;">Z</strong>en.com</h2>
         </div>
         <div>
           <form id="sign-up">
